@@ -1,0 +1,99 @@
+Objective:
+	Ruppellii will crawl the web, taking data from pre-defined, reuputable sources in order to 
+	construct and maintain a database of accurate, up to date knowlege, used in the future as a 
+	foundation for an artificial intellegence, or a natural language based web crawler(start with news scanning).
+
+Following is a list of subjects, their subsections, data required, and the sources where their info can be found:
+	People:
+		-ALL
+			*name
+				-name numerology
+			*alias(es)
+			*birth date
+				-zodiac sign
+			*last known location && date
+			*affiliates
+		-Activists
+			*cause
+			*base of operation
+			*approximate following
+		-Athletes
+			*sport(s)
+				-stats('running yars, 'most points in a game', etc)
+				-number
+				-team
+			*endorsments
+			*net worth
+		-Business Leaders
+			*net worth
+			*companies
+			*investments
+		-Celebrities
+			-Actors
+				*filmography
+				*primary genres
+			-Musicians
+				*discography
+				*on tour?
+				*tour locale & dates
+				*record label
+		-Politicians
+			*party
+			*position(senator etc)
+			*time in position
+			*past public history
+			*state represented
+			*election win percentage
+	Busineses:
+		*stock price
+		*stock price history
+		*product
+		*quarterly data
+		*mergers & aquisitions
+
+	Countries:
+		-Cities/States
+			*unemployment
+			*landmarks
+			*population
+			*climate
+			*demographics
+			*current political party (US only)
+			*total budget
+		-Government Debt
+		-Inflation
+		-Gross Domestic Product
+		-Nation-wide stocks
+		-Terrifs(in & out)
+		-Military
+			*location(s)
+			*size
+			*air fleet
+			*naval fleet
+			*ground fleet
+			*nuclear?
+			*generals
+				-presiding location
+				-troops under command
+				-joined by
+				-years in service
+
+	Currency:
+		*countries that use it
+		*value in USD
+		*market stats
+
+	Internet:
+		-Major Websites
+			*traffic
+			*competitors
+			*start date
+
+	Fame:
+		-Music
+			$Bilboard's top 100
+		-Movies
+			$IMDB
+		-People
+			$US WEEKLY's Top 5 Celebrities	
+
