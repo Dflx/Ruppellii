@@ -1,0 +1,53 @@
+Primary Engine  
+/*
+* I forgot to label it in the diagram... i'll fix it later.
+* It is the system comprised of the Engine and the Database.
+*/
+========================================================================
+
+-Accept a [gridlock] or [idle] signal from the Scheduler, and respond by adjusting the package size.
+-Accept a [parsed_code] or an [inquery] object from outliers (Raw Factories, and Natural Language Engines).
+-Sanitize, validate and store  packages in the database.
+-Monitor the Database status, and manage queries
+-Prioritize links to search.
+-Create packages, consisting of core data updates, sites to crawl, and inqueries, and send them
+ to the Scheduler.
+-Dynamically size packages, based on the [workload] updates from the Scheduler.
+
+
+Scheduler
+==========================================================================
+
+-Accept packages from the Primary Engine.
+-Accept [package_finalized] signals from outliers.
+-Observe outliers and collect status'
+-Update the Primary Engine on the status of the outliers for optimization.
+-Optimize outlier by choosing the best package for the outlier, based on performance measurements.
+
+
+
+Raw Factory
+========================================================================
+
+-Accept packages and status requests from the scheduler.
+	-packages include [inquery], [probe], and [core_update] objects.
+
+-Download raw data from the web and store it in a que.
+-Send a [package_finalized] signal to the Primary Engine once package is fully downloaded.
+-Send a [stop] signal to the Scheduler when que is full and [go] when ready for more work.
+-Spider through the que, extracting relevant info and saving it in the package.
+-Send a [parsed_package] object to the Primary Engine, once done.
+-Partition recources to optimize workload (ie. stop downloading and parse, if needed)  
+
+
+
+Natural Language Engine
+========================================================================
+
+-Accepts packages and status requests from the Scheduler
+	-packages include [inquery] and [parsed_package] objects.
+
+-Parse packages using natural language processesing to find relevant info
+-store packages in que and send [stop] and [go] signals to the Scheduler when needed
+-Send [inquery] objects to the Primary Engine once finalized.
+-Partition recources for optimization
