@@ -1,9 +1,0 @@
--The crawler should have a space to ask the user or admin something it is unsure of.
-It can ask "What is this Activist's cause?" implying knowlege that every activist is a person
-(instead of asking "What is this Person's cause?")
-
--Can an intellegent crawler discern the subject type of information on its own?
-an example:
-	The crawler comes across the word arsonist. After following proceedure and searching for relevent info 
-	on google, wikipedia etc... it comes uses context to conclude that an arsonist is a person. It would then
-	need to further categorize an arsonist as a criminal. Person > Criminal > Arsonist 
